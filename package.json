@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev": "trash ./dist && parcel src/index.html",
+    "dev": "trash ./dist && parcel --no-cache src/index.html",
     "build": "trash ./dist && parcel build src/index.html"
   },
   "engines": {
