@@ -43,17 +43,53 @@ body {
         @include hoverEffectOne($warning);
       }
     }
-  }
-  //RESERVATION LITE SECTION
-  .reservation-lite-section {
-    @include basicImg("../img/landing-page-reservations.jpg", fixed);
-    height: 40rem;
 
-    .overlay-dark {
-      background-color: rgb(0 0 0 / 63%);
+    //RESERVATION LITE SECTION
+    .reservation-lite-section {
+      @include basicImg("../img/landing-page-reservations.jpg", fixed);
+      height: 40rem;
+
+      .overlay-dark {
+        background-color: rgb(0 0 0 / 63%);
+      }
+      .col-12 {
+        z-index: 999999;
+      }
     }
-    .col-12 {
-      z-index: 999999;
+
+    //SPECIAL MEALS SECTION
+    .special-meals-section {
+      hr {
+        @include customHr($warning);
+      }
+      .row {
+        .card {
+          &:hover .btn {
+            bottom: 12px;
+            transition: all 0.8s ease-in;
+          }
+          .meal-one {
+            @include basicImg("../img/meal-1.jpg", unset);
+            height: 18rem;
+          }
+          .meal-two {
+            @include basicImg("../img/meal-2.jpg", unset);
+            height: 18rem;
+          }
+          .meal-three {
+            @include basicImg("../img/meal-3.jpg", unset);
+            height: 18rem;
+          }
+          .btn {
+            bottom: -39px;
+            left: 96px;
+            transition: all 0.8s;
+            &:hover {
+              @include hoverEffectOne(white);
+            }
+          }
+        }
+      }
     }
   }
 }
