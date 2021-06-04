@@ -23,12 +23,37 @@ body {
     }
     //HERO SECTION
     .hero-section {
-      @include basicImg("../img/landing_page_img1.jpg");
+      @include basicImg("../img/landing_page_img1.jpg", "unset");
       height: 42rem;
 
       .btn {
-        @include hoverEffectOne($primary);
+        @include hoverEffectOne(darken($warning, 10%));
       }
+    }
+  }
+
+  //MAIN
+  main {
+    //ABOUT LITE SECTION
+    .about-lite-section {
+      hr {
+        @include customHr($warning);
+      }
+      .btn {
+        @include hoverEffectOne($warning);
+      }
+    }
+  }
+  //RESERVATION LITE SECTION
+  .reservation-lite-section {
+    @include basicImg("../img/landing-page-reservations.jpg", fixed);
+    height: 40rem;
+
+    .overlay-dark {
+      background-color: rgb(0 0 0 / 63%);
+    }
+    .col-12 {
+      z-index: 999999;
     }
   }
 }

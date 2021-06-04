@@ -1,8 +1,9 @@
-@mixin basicImg($imgUrl) {
+@mixin basicImg($imgUrl, $attac) {
   background-image: url($imgUrl);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  background-attachment: $attac;
 }
 
 @mixin hoverEffectOne($color) {
@@ -12,4 +13,11 @@
     box-shadow: inset 300px 0 0 0 $color;
     border-color: $color;
   }
+}
+
+@mixin customHr($color) {
+  width: 75px;
+  height: 3px;
+  background-color: $color;
+  opacity: 1;
 }
