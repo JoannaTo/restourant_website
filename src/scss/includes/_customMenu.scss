@@ -1,0 +1,57 @@
+header {
+  .scroll {
+    background-color: $primary !important;
+  }
+  //NAVBAR
+  nav {
+    z-index: 999 !important;
+    .clicked-hr {
+      border-bottom: 3px solid $warning;
+      color: white !important;
+    }
+    .navbar-nav {
+      .nav-link {
+        width: 7rem;
+      }
+    }
+  }
+  //HERO SECTION
+  .hero-section-about {
+    @include basicImg("../img/menu/img-1.jpg", unset);
+    height: 30rem;
+    .hero-dark {
+      top: 0;
+      left: 0;
+      background-color: #00000085;
+      z-index: 1;
+    }
+    .hero-content-about {
+      z-index: 9;
+    }
+    .btn {
+      @include hoverEffectOne(darken($warning, 10%));
+    }
+  }
+}
+main {
+  .menu-section {
+    hr {
+      @include customHr($warning);
+    }
+  }
+}
+footer {
+  .social-network-container {
+    a {
+      cursor: pointer;
+      margin-right: 0.5rem;
+
+      i {
+        font-size: 1.5rem;
+        &:hover {
+          color: $warning !important;
+        }
+      }
+    }
+  }
+}
