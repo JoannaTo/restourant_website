@@ -4,6 +4,12 @@ $primary: #070707;
 $secondary: #efefef;
 $yellow: #dc9800 !default;
 $info: rgba(0, 0, 0, 0.493) !default;
+//CAROUSEL
+$carousel-control-color: $primary;
+$carousel-control-opacity: 1;
+$carousel-control-icon-width: 3rem !default;
+//INPUT
+$input-padding-y-lg: 0.6rem !default;
 //BODY
 $body-bg: $secondary !default;
 $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
@@ -13,3 +19,12 @@ $font-family-sans-serif: "Roboto", system-ui, -apple-system, "Segoe UI", Roboto,
 //FONTS
 $font-size-base: 1rem !default; // Assumes the browser default, typically `16px`
 $h1-font-size: $font-size-base * 3 !default;
+
+//NAV
+$nav-tabs-border-color: none;
+$nav-tabs-link-active-border-color: $yellow;
+$nav-tabs-link-active-color: black;
+
+//INPUT
+$input-border-radius: 20rem;
+$input-bg: $body-bg;

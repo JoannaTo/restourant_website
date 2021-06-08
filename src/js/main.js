@@ -12,8 +12,8 @@ navLinkItems.forEach((navLink) => {
 var navbar = document.querySelector(".navbar");
 window.addEventListener("scroll", () => {
   if (
-    document.body.scrollTop >= 280 ||
-    document.documentElement.scrollTop >= 280
+    document.body.scrollTop >= 260 ||
+    document.documentElement.scrollTop >= 260
   ) {
     navbar.classList.add("scroll");
   } else {
