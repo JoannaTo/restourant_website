@@ -27,10 +27,10 @@ body {
     //HERO SECTION
     .hero-section {
       @include basicImg("../img/landing_page_img1.jpg", "unset");
-      height: 42rem;
+      height: 46rem;
 
       .btn {
-        @include hoverEffectOne(darken($warning, 10%));
+        @include hoverEffectOne(lighten($warning, 10%));
       }
     }
   }
@@ -59,12 +59,15 @@ body {
       .col-12 {
         z-index: 99;
       }
+      .btn {
+        @include hoverEffectOne(#e3ab2f);
+      }
     }
 
     //SPECIAL MEALS SECTION
     .special-meals-section {
       hr {
-        @include customHr($warning);
+        @include customHr(lighten($warning, 10%));
       }
       .row {
         .card {
@@ -87,7 +90,7 @@ body {
           .btn {
             bottom: -39px;
             left: 96px;
-            transition: all 0.8s;
+            transition: all 0.4s;
             &:hover {
               @include hoverEffectOne(white);
             }
@@ -157,8 +160,12 @@ footer {
 
 //MEDIA QUERIES
 @media only screen and (max-width: 600px) {
+  .m-l-0 {
+    margin-left: 0 !important;
+  }
   header {
     //NAVBAR
+
     nav {
       background-color: $primary;
     }
@@ -177,13 +184,13 @@ footer {
         align-items: center !important;
       }
     }
-    //NEWSLETTER
-    .newsletter-section {
-      .col-12 {
-        .input-btn-custom {
-          input {
-            width: 20rem !important;
-          }
+  }
+  //NEWSLETTER
+  .newsletter-section {
+    .col-12 {
+      .input-btn-custom {
+        input {
+          width: 20rem !important;
         }
       }
     }

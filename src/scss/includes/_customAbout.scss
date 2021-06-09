@@ -45,7 +45,7 @@ main {
     }
     .card {
       margin-left: -4rem;
-      margin-top: 6rem;
+      margin-top: 3rem;
     }
   }
   .gallery-section {
@@ -131,6 +131,21 @@ footer {
           color: $warning !important;
         }
       }
+    }
+  }
+}
+//MEDIA QUERIES
+
+@media only screen and (max-width: 600px) {
+  .history-section {
+    .w-sm-100 {
+      width: 100% !important;
+    }
+    .w-sm-o {
+      width: auto !important;
+    }
+    .card {
+      margin: 0 !important;
     }
   }
 }
