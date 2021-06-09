@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
     <link rel="stylesheet" href="./scss/main.scss" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -18,7 +19,7 @@
       <!--NAVBAR SECTION-->
       <nav class="navbar navbar-expand-lg pb-lg-0 fixed-top w-100 navbar-dark">
         <div class="container-fluid ">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"><i class="fas fa-utensils text-warning"></i> RESTourant</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -34,7 +35,7 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav mr-5">
+            <div class="navbar-nav mr-5 align-items-center">
               <a
                 class="nav-link text-capitalize text-center"
                 aria-current="page"
@@ -85,18 +86,19 @@
             We are number one restourant in New York!<br />
             Come and see it yourself!
           </h3>
-          <button
+          <a
+          href="#menu"
             id="btn"
-            class="btn btn-lg text-uppercase btn-warning text-light m-3"
+            class="btn text-decoration-none btn-lg text-uppercase btn-warning text-light m-3"
           >
            see menu
-          </button>
+          </a>
         </div>
       </div>
     </header>
     <main>
       <!--MENU-->
-      <div class="container py-5 menu-section">
+      <div class="container py-5 menu-section" id="menu">
         <h2 class="text-uppercase mb-4 text-center">explore the menu</h2>
         <hr class="mb-5 m-auto">
         <div class="row">
@@ -359,5 +361,6 @@
       integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>

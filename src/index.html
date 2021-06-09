@@ -4,7 +4,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <title>RESTourant</title>
     <link
       rel="stylesheet"
       href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
@@ -17,7 +18,9 @@
       <!--NAVBAR SECTION-->
       <nav class="navbar navbar-expand-lg pb-lg-0 fixed-top w-100 navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">Navbar</a>
+          <a class="navbar-brand" href="index.html"
+            ><i class="fas fa-utensils text-warning"></i> RESTourant</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -33,7 +36,7 @@
             class="collapse navbar-collapse justify-content-end"
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav mr-5">
+            <div class="navbar-nav mr-5 align-items-center">
               <a
                 class="nav-link clicked-hr text-capitalize text-center"
                 aria-current="page"
@@ -85,12 +88,19 @@
             We are number one restourant in New York!<br />
             Come and see it yourself!
           </h3>
-          <button
+          <a
             id="btn"
-            class="btn btn-lg text-uppercase btn-warning text-light m-3"
+            href="reservation.html"
+            class="
+              btn btn-lg
+              text-decoration-none text-uppercase
+              btn-warning
+              text-light
+              m-3
+            "
           >
             book a table
-          </button>
+          </a>
         </div>
       </div>
     </header>
@@ -123,11 +133,19 @@
               placeat expedita esse dolore eos quod nobis architecto, autem
               incidunt eligendi illum nam nulla alias aut, fuga saepe!
             </p>
-            <button
-              class="btn btn-lg text-uppercase btn-outline-warning text-dark"
+            <a
+              href="about.html"
+              class="
+                btn
+                text-decoration-none
+                btn-lg
+                text-uppercase
+                btn-outline-warning
+                text-dark
+              "
             >
               find out more
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -154,9 +172,17 @@
               dolor fugiat, quasi saepe eaque, dolores soluta a aspernatur nam
               odit quas sint dicta error sed esse nemo quae molestias debitis!
             </p>
-            <button class="btn btn-warning btn-lg text-uppercase text-light">
+            <a
+              href="reservation.html"
+              class="
+                btn
+                text-decoration-none
+                btn-warning btn-lg
+                text-uppercase text-light
+              "
+            >
               make a reservation
-            </button>
+            </a>
           </div>
         </div>
       </div>
@@ -279,7 +305,7 @@
           </div>
         </div>
         <h5 class="mt-5">
-          See our full menu <a class="text-warning" href="">here</a>
+          See our full menu <a class="text-warning" href="menu.html">here</a>
         </h5>
       </div>
       <!--NEWSLETTER-->

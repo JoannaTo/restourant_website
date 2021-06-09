@@ -31,7 +31,7 @@ header {
       z-index: 9;
     }
     .btn {
-      @include hoverEffectOne(darken($warning, 10%));
+      @include hoverEffectOne(lighten($warning, 10%));
     }
   }
 }
@@ -59,25 +59,25 @@ main {
     }
     .column {
       .img-1 {
-        @include basicImg("../img/about/gallery-img-1.jpg", unset);
+        @include basicImg("../img/about/img_1.jpg", unset);
       }
       .img-2 {
-        @include basicImg("../img/about/gallery-img-2.jpg", unset);
+        @include basicImg("../img/about/img_2.jpg", unset);
       }
       .img-3 {
-        @include basicImg("../img/about/gallery-img-3.jpg", unset);
+        @include basicImg("../img/about/img_3.jpg", unset);
       }
       .img-4 {
-        @include basicImg("../img/about/gallery-img-4.jpg", unset);
+        @include basicImg("../img/about/img_4.jpg", unset);
       }
       .img-5 {
-        @include basicImg("../img/about/gallery-img-5.jpg", unset);
+        @include basicImg("../img/about/img_5.jpg", unset);
       }
       .img-6 {
-        @include basicImg("../img/about/gallery-img-6.jpg", unset);
+        @include basicImg("../img/about/img_6.jpg", unset);
       }
       .img-7 {
-        @include basicImg("../img/about/gallery-img-7.jpg", unset);
+        @include basicImg("../img/about/img_7.jpg", unset);
       }
       .img-8 {
         @include basicImg("../img/about/gallery-img-8.jpg", unset);
@@ -86,8 +86,9 @@ main {
         height: 20rem;
         width: 20rem;
         transition: all 0.5s ease;
-        &:hover {
-          transform: scale(1.2);
+        &:hover .btn-modal {
+          display: block !important;
+          transition: all 0.5s ease;
         }
       }
     }

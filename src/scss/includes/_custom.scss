@@ -60,7 +60,7 @@ body {
         z-index: 99;
       }
       .btn {
-        @include hoverEffectOne(#e3ab2f);
+        @include hoverEffectOne(lighten($warning, 10%));
       }
     }
 

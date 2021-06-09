@@ -12,13 +12,16 @@
       integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
       crossorigin="anonymous"
     />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
       <!--NAVBAR SECTION-->
       <nav class="navbar navbar-expand-lg pb-0 fixed-top w-100 navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#"
+            ><i class="fas fa-utensils text-warning"></i> RESTourant</a
+          >
           <button
             class="navbar-toggler"
             type="button"
@@ -31,10 +34,14 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div
-            class="collapse navbar-collapse justify-content-end"
+            class="
+              collapse
+              navbar-collapse
+              justify-content-lg-end justify-content-center
+            "
             id="navbarNavAltMarkup"
           >
-            <div class="navbar-nav mr-5">
+            <div class="navbar-nav mr-5 align-items-center">
               <a
                 class="nav-link text-capitalize text-center"
                 aria-current="page"
@@ -55,7 +62,9 @@
                 href="#"
                 >reservation</a
               >
-              <a class="nav-link text-capitalize text-center" href="#"
+              <a
+                class="nav-link text-capitalize text-center"
+                href="contact.html"
                 >contact</a
               >
             </div>
@@ -78,25 +87,34 @@
             mx-5
           "
         >
-          <h1 class="text-uppercase text-light m-3">
+          <h1 class="text-uppercase text-light m-3 text-center">
             make a reservation <span class="text-warning">now</span>
           </h1>
           <h3 class="text-light m-3 text-right">
             We are number one restourant in New York!<br />
             Come and see it yourself!
           </h3>
-          <button
+          <a
+            href="#reservation"
             id="btn"
-            class="btn btn-lg text-uppercase btn-warning text-light m-3"
+            class="
+              btn
+              text-decoration-none
+              btn-lg
+              text-uppercase
+              btn-warning
+              text-light
+              m-3
+            "
           >
             reservation
-          </button>
+          </a>
         </div>
       </div>
     </header>
     <main>
       <!--RESERVATION-->
-      <div class="container reservation-section py-5">
+      <div class="container reservation-section py-5" id="reservation">
         <div class="row">
           <div
             class="col-12 col-lg-6 d-flex flex-column justify-content-between"
@@ -255,5 +273,6 @@
       integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT"
       crossorigin="anonymous"
     ></script>
+    <script src="./js/main.js"></script>
   </body>
 </html>
