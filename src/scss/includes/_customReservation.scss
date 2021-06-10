@@ -16,8 +16,8 @@ header {
     }
   }
   //HERO SECTION
-  .hero-section-about {
-    @include basicImg("../img/menu/img-1.jpg", unset);
+  .hero-section-reservations {
+    @include basicImg("../img/landing-page-reservations.jpg", unset);
     height: 30rem;
     .hero-dark {
       top: 0;

@@ -378,74 +378,170 @@
         <hr class="mb-5" />
         <div class="row">
           <div class="col-12">
-            <!--CAROUSEL-->
-
+            <!--SLIDER-->
             <div
-              class="
-                row row-cols-1 row-cols-md-3
-                g-4
-                flex-column
-                align-items-center
-                flex-lg-row flex-md-row flex-wrap
-              "
+              id="carouselExampleControls"
+              class="carousel slide"
+              data-bs-ride="carousel"
             >
-              <div class="col">
-                <div class="card h-100">
-                  <img
-                    src="../src/img/person-2.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title text-capitalize">lorem ipsum</h5>
-                    <p class="card-text">
-                      <q>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="slide1 row">
+                    <figure
+                      class="
+                        col-12 col-lg-6
+                        card-content-header
+                        d-flex
+                        flex-column
+                        align-items-lg-end align-items-center
+                      "
+                    >
+                      <img
+                        name="slide"
+                        src="./img/pexels-andrea-piacquadio-3767407.jpg "
+                        class="img-fluid w-50"
+                        alt=""
+                      />
+                      <figcaption>
+                        <b> Jane Doe, </b> <small> menager </small>
+                      </figcaption>
+                    </figure>
+                    <div
+                      class="
+                        col-12 col-lg-6
+                        card-content-body
+                        d-flex
+                        flex-column
+                        justify-content-evenly
+                        align-items-lg-baseline align-items-center
+                      "
+                    >
+                      <i class="fas fa-quote-right text-warning fs-2"></i>
+                      <p class="w-50">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                        Dignissimos, sunt.
-                      </q>
-                    </p>
+                        Fuga ipsam suscipit, repellat modi vel minus commodi
+                        deleniti maxime ipsum, dolor praesentium quibusdam
+                        temporibus? Dolorum, excepturi optio voluptatem tempora
+                        necessitatibus sint.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide1 row">
+                    <figure
+                      class="
+                        col-12 col-lg-6
+                        card-content-header
+                        d-flex
+                        flex-column
+                        align-items-lg-end align-items-center
+                      "
+                    >
+                      <img
+                        name="slide"
+                        src="./img/pexels-andrea-piacquadio-3767407.jpg"
+                        class="img-fluid w-50"
+                        alt=""
+                      />
+                      <figcaption>
+                        <b> Jane Doe, </b> <small> menager </small>
+                      </figcaption>
+                    </figure>
+                    <div
+                      class="
+                        col-12 col-lg-6
+                        card-content-body
+                        d-flex
+                        flex-column
+                        justify-content-evenly
+                        align-items-lg-baseline align-items-center
+                      "
+                    >
+                      <i class="fas fa-quote-right text-warning fs-2"></i>
+                      <p class="w-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga ipsam suscipit, repellat modi vel minus commodi
+                        deleniti maxime ipsum, dolor praesentium quibusdam
+                        temporibus? Dolorum, excepturi optio voluptatem tempora
+                        necessitatibus sint.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="slide1 row">
+                    <figure
+                      class="
+                        col-12 col-lg-6
+                        card-content-header
+                        d-flex
+                        flex-column
+                        align-items-lg-end align-items-center
+                      "
+                    >
+                      <img
+                        name="slide"
+                        src="./img/pexels-vanessa-garcia-6326158.jpg"
+                        class="img-fluid w-50"
+                        alt=""
+                      />
+                      <figcaption>
+                        <b> Jane Doe, </b> <small> menager </small>
+                      </figcaption>
+                    </figure>
+                    <div
+                      class="
+                        col-12 col-lg-6
+                        card-content-body
+                        d-flex
+                        flex-column
+                        justify-content-evenly
+                        align-items-lg-baseline align-items-center
+                      "
+                    >
+                      <i class="fas fa-quote-right text-warning fs-2"></i>
+                      <p class="w-50">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Fuga ipsam suscipit, repellat modi vel minus commodi
+                        deleniti maxime ipsum, dolor praesentium quibusdam
+                        temporibus? Dolorum, excepturi optio voluptatem tempora
+                        necessitatibus sint.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img
-                    src="../src/img/person-2.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      This card has supporting text below as a natural lead-in
-                      to additional content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img
-                    src="../src/img/person-2.jpg"
-                    class="card-img-top"
-                    alt=""
-                  />
-                  <div class="card-body text-center">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">
-                      <q>
-                        Lorem ipsum, dolor sit amet consectetur adipisicing
-                        elit. Quibusdam ad assumenda vel?
-                      </q>
-                    </p>
-                  </div>
-                </div>
-              </div>
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev"
+              >
+                <span
+                  class="carousel-control-prev-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#carouselExampleControls"
+                data-bs-slide="next"
+              >
+                <span
+                  class="carousel-control-next-icon"
+                  aria-hidden="true"
+                ></span>
+                <span class="visually-hidden">Next</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </main>
+
     <footer class="footer-section bg-primary pt-5 pb-3">
       <div class="container">
         <div class="row">

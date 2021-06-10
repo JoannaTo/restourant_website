@@ -19,7 +19,7 @@ header {
   }
   //HERO SECTION
   .hero-section-about {
-    @include basicImg("../img/about/gallery-img-3.jpg", unset);
+    @include basicImg("../img/about/img_3.jpg", unset);
     height: 30rem;
     .hero-dark {
       top: 0;
@@ -86,6 +86,7 @@ main {
         height: 20rem;
         width: 20rem;
         transition: all 0.5s ease;
+        cursor: pointer;
         &:hover .btn-modal {
           display: block !important;
           transition: all 0.5s ease;
@@ -103,7 +104,10 @@ main {
     .card-team {
       background: transparent !important;
       border: none !important;
-
+      &:hover .card-footer {
+        display: block !important;
+        transition: all 0.3s;
+      }
       .card-footer {
         .text-muted {
           a {

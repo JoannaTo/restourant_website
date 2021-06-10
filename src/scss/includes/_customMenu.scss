@@ -16,7 +16,7 @@ header {
     }
   }
   //HERO SECTION
-  .hero-section-about {
+  .hero-section-menu {
     @include basicImg("../img/menu/img-1.jpg", unset);
     height: 30rem;
     .hero-dark {
@@ -37,6 +37,12 @@ main {
   .menu-section {
     hr {
       @include customHr($warning);
+    }
+    .card {
+      img {
+        width: 100%;
+        height: 200px;
+      }
     }
   }
 }
