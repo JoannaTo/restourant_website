@@ -1,5 +1,3 @@
-import "../scss/main.scss";
-
 const data = [
   {
     title: "John Doe",
