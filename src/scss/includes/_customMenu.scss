@@ -1,63 +1,100 @@
 header {
-  .scroll {
-    background-color: $primary !important;
-  }
-  //NAVBAR
-  nav {
-    z-index: 999 !important;
-    .clicked-hr {
-      border-bottom: 3px solid $warning;
-      color: white !important;
+    .scroll {
+        background-color: $primary !important;
     }
-    .navbar-nav {
-      .nav-link {
-        width: 7rem;
-      }
+    //NAVBAR
+    nav {
+        z-index: 999 !important;
+        .clicked-hr {
+            border-bottom: 3px solid $warning;
+            color: white !important;
+        }
+        .navbar-nav {
+            .nav-link {
+                width: 7rem;
+            }
+        }
     }
-  }
-  //HERO SECTION
-  .hero-section-menu {
-    @include basicImg("../img/menu/img-1.jpg", unset);
-    height: 30rem;
-    .hero-dark {
-      top: 0;
-      left: 0;
-      background-color: #00000085;
-      z-index: 1;
+    //HERO SECTION
+    .hero-section-menu {
+        @include basicImg('../img/menu/img-1.jpg', unset);
+        height: 30rem;
+        .hero-dark {
+            top: 0;
+            left: 0;
+            background-color: #00000085;
+            z-index: 1;
+        }
+        .hero-content-about {
+            z-index: 9;
+        }
+        .btn {
+            @include hoverEffectOne(lighten($warning, 10%));
+        }
     }
-    .hero-content-about {
-      z-index: 9;
-    }
-    .btn {
-      @include hoverEffectOne(lighten($warning, 10%));
-    }
-  }
 }
 main {
-  .menu-section {
-    hr {
-      @include customHr($warning);
+    .menu-section {
+        hr {
+            @include customHr($warning);
+        }
+        .card {
+            .img-menu-1 {
+                @include basicImg(
+                    'https://recipe-graphics.grocerywebsite.com/0_GraphicsRecipes/7977_4k.jpg',
+                    'unset'
+                );
+            }
+            .img-menu-2 {
+                @include basicImg(
+                    '../img/pexels-riki-risnandar-3967347.jpg',
+                    'unset'
+                );
+            }
+            .img-menu-3 {
+                @include basicImg(
+                    '../img/pexels-cats-coming-699544.jpg',
+                    'unset'
+                );
+            }
+            .img-menu-4 {
+                @include basicImg(
+                    '../img/pexels-pascal-claivaz-410648.jpg',
+                    'unset'
+                );
+            }
+            .img-menu-5 {
+                @include basicImg(
+                    '../img/pexels-harry-dona-2338407.jpg',
+                    'unset'
+                );
+            }
+            .img-menu-6 {
+                @include basicImg(
+                    '../img/pexels-riki-risnandar-3967347.jpg',
+                    'unset'
+                );
+            }
+
+            .img {
+                width: 100%;
+                height: 200px;
+            }
+        }
     }
-    .card {
-      img {
-        width: 100%;
-        height: 200px;
-      }
-    }
-  }
 }
 footer {
-  .social-network-container {
-    a {
-      cursor: pointer;
-      margin-right: 0.5rem;
+    .social-network-container {
+        a {
+            cursor: pointer;
+            margin-right: 0.5rem;
 
-      i {
-        font-size: 1.5rem;
-        &:hover {
-          color: $warning !important;
+            i {
+                font-size: 1.5rem;
+                &:hover {
+                    color: $warning !important;
+                }
+            }
         }
-      }
     }
-  }
 }

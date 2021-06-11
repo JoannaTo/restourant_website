@@ -74,22 +74,23 @@ main {
                 @include basicImg('../img/about/img_5.jpg', unset);
             }
             .img-6 {
-                @include basicImg('../img/about/img_6.jpg', unset);
+                @include basicImg('../img/about/gallery-img-7.jpg', unset);
             }
             .img-7 {
                 @include basicImg('../img/about/img_7.jpg', unset);
             }
             .img-8 {
-                @include basicImg('../img/about/gallery-img-8.jpg', unset);
+                @include basicImg('../img/about/gallery-img-5.jpg', unset);
             }
             .img {
                 height: 20rem;
                 width: 20rem;
-                transition: all 0.5s ease;
+                transition: all 0.5s;
                 cursor: pointer;
+
                 &:hover .btn-modal {
                     display: block !important;
-                    transition: all 0.5s ease;
+                    transition: all 0.5s;
                 }
             }
         }
@@ -153,6 +154,23 @@ footer {
 //MEDIA QUERIES
 
 @media only screen and (max-width: 600px) {
+    .history-section {
+        .w-sm-100 {
+            width: 100% !important;
+        }
+        .w-sm-o {
+            width: auto !important;
+        }
+        .card {
+            margin: 0 !important;
+        }
+    }
+}
+//IPAD
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+    .mt-sm-1 {
+        margin-top: 1rem !important;
+    }
     .history-section {
         .w-sm-100 {
             width: 100% !important;
