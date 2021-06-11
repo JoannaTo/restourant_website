@@ -1,18 +1,4 @@
-const data = [
-  {
-    title: "John Doe",
-    src: "./img/pexels-andrea-piacquadio-3767407.jpg ",
-    text: "some text",
-  },
-  {
-    title: "Jane Doe",
-    src: "./img/pexels-andrea-piacquadio-3767407.jpg ",
-    text: "some text",
-  },
-];
-
-console.log("hello");
-var navLinkItems = document.querySelectorAll(".nav-link");
+var navLinkItems = document.querySelectorAll(".navLink");
 
 navLinkItems.forEach((navLink) => {
   navLink.addEventListener("click", () => {
