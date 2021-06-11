@@ -1,156 +1,167 @@
 //ABOUT
 
 header {
-  .scroll {
-    background-color: $primary !important;
-  }
-  //NAVBAR
-  nav {
-    z-index: 999 !important;
-    .clicked-hr {
-      border-bottom: 3px solid $warning;
-      color: white !important;
+    .scroll {
+        background-color: $primary !important;
     }
-    .navbar-nav {
-      .nav-link {
-        width: 7rem;
-      }
+    //NAVBAR
+    nav {
+        z-index: 999 !important;
+        .clicked-hr {
+            border-bottom: 3px solid $warning;
+            color: white !important;
+        }
+        .navbar-nav {
+            .nav-link {
+                width: 7rem;
+            }
+        }
     }
-  }
-  //HERO SECTION
-  .hero-section-about {
-    @include basicImg("../img/about/img_3.jpg", unset);
-    height: 30rem;
-    .hero-dark {
-      top: 0;
-      left: 0;
-      background-color: #00000085;
-      z-index: 1;
+    //HERO SECTION
+    .hero-section-about {
+        @include basicImg('../img/about/img_3.jpg', unset);
+        height: 30rem;
+        .hero-dark {
+            top: 0;
+            left: 0;
+            background-color: #00000085;
+            z-index: 1;
+        }
+        .hero-content-about {
+            z-index: 9;
+        }
+        .btn {
+            @include hoverEffectOne(lighten($warning, 10%));
+        }
     }
-    .hero-content-about {
-      z-index: 9;
-    }
-    .btn {
-      @include hoverEffectOne(lighten($warning, 10%));
-    }
-  }
 }
 main {
-  .history-section {
-    hr {
-      @include customHr($warning);
-    }
-    .history-section-content {
-      margin-top: 3rem;
-    }
-    .card {
-      margin-left: -4rem;
-      margin-top: 3rem;
-    }
-  }
-  .gallery-section {
-    hr {
-      @include customHr($warning);
-    }
-    .row:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-    .column {
-      .img-1 {
-        @include basicImg("../img/about/img_1.jpg", unset);
-      }
-      .img-2 {
-        @include basicImg("../img/about/img_2.jpg", unset);
-      }
-      .img-3 {
-        @include basicImg("../img/about/img_3.jpg", unset);
-      }
-      .img-4 {
-        @include basicImg("../img/about/img_4.jpg", unset);
-      }
-      .img-5 {
-        @include basicImg("../img/about/img_5.jpg", unset);
-      }
-      .img-6 {
-        @include basicImg("../img/about/img_6.jpg", unset);
-      }
-      .img-7 {
-        @include basicImg("../img/about/img_7.jpg", unset);
-      }
-      .img-8 {
-        @include basicImg("../img/about/gallery-img-8.jpg", unset);
-      }
-      .img {
-        height: 20rem;
-        width: 20rem;
-        transition: all 0.5s ease;
-        cursor: pointer;
-        &:hover .btn-modal {
-          display: block !important;
-          transition: all 0.5s ease;
+    .history-section {
+        hr {
+            @include customHr($warning);
         }
-      }
+        .history-section-content {
+            margin-top: 3rem;
+        }
+        .card {
+            margin-left: -4rem;
+            margin-top: 3rem;
+        }
     }
-  }
-  .team-section {
-    .team-section-header {
-      hr {
-        @include customHr($warning);
-      }
-    }
-
-    .card-team {
-      background: transparent !important;
-      border: none !important;
-      &:hover .card-footer {
-        display: block !important;
-        transition: all 0.3s;
-      }
-      .card-footer {
-        .text-muted {
-          a {
-            cursor: pointer;
-            i {
-              font-size: 1.5rem;
-              &:hover {
-                color: $primary !important;
-              }
+    .gallery-section {
+        hr {
+            @include customHr($warning);
+        }
+        .row:after {
+            content: '';
+            display: table;
+            clear: both;
+        }
+        .column {
+            .img-1 {
+                @include basicImg('../img/about/img_1.jpg', unset);
             }
-          }
+            .img-2 {
+                @include basicImg('../img/about/img_2.jpg', unset);
+            }
+            .img-3 {
+                @include basicImg('../img/about/img_3.jpg', unset);
+            }
+            .img-4 {
+                @include basicImg('../img/about/img_4.jpg', unset);
+            }
+            .img-5 {
+                @include basicImg('../img/about/img_5.jpg', unset);
+            }
+            .img-6 {
+                @include basicImg('../img/about/img_6.jpg', unset);
+            }
+            .img-7 {
+                @include basicImg('../img/about/img_7.jpg', unset);
+            }
+            .img-8 {
+                @include basicImg('../img/about/gallery-img-8.jpg', unset);
+            }
+            .img {
+                height: 20rem;
+                width: 20rem;
+                transition: all 0.5s ease;
+                cursor: pointer;
+                &:hover .btn-modal {
+                    display: block !important;
+                    transition: all 0.5s ease;
+                }
+            }
         }
-      }
     }
-  }
+    .team-section {
+        .team-section-header {
+            hr {
+                @include customHr($warning);
+            }
+        }
+
+        .card-team {
+            .card-team-img {
+                height: 200px;
+                @include basicImg(
+                    '../img/pexels-vanessa-garcia-6326158.jpg',
+                    unset
+                );
+            }
+            .card-team-img2 {
+                height: 200px;
+                @include basicImg(
+                    '../img/pexels-andrea-piacquadio-3767407.jpg',
+                    unset
+                );
+            }
+            .card-team-img3 {
+                height: 200px;
+                @include basicImg(
+                    '../img/pexels-andrea-piacquadio-3837279.jpg',
+                    unset
+                );
+            }
+            .team-social-icons {
+                a {
+                    cursor: pointer;
+                    font-size: 1.5rem !important;
+                    &:hover i {
+                        color: $primary !important;
+                    }
+                }
+            }
+        }
+    }
 }
 footer {
-  .social-network-container {
-    a {
-      cursor: pointer;
-      margin-right: 0.5rem;
+    .social-network-container {
+        a {
+            cursor: pointer;
+            margin-right: 0.5rem;
 
-      i {
-        font-size: 1.5rem;
-        &:hover {
-          color: $warning !important;
+            i {
+                font-size: 1.5rem;
+                &:hover {
+                    color: $warning !important;
+                }
+            }
         }
-      }
     }
-  }
 }
 //MEDIA QUERIES
 
 @media only screen and (max-width: 600px) {
-  .history-section {
-    .w-sm-100 {
-      width: 100% !important;
+    .history-section {
+        .w-sm-100 {
+            width: 100% !important;
+        }
+        .w-sm-o {
+            width: auto !important;
+        }
+        .card {
+            margin: 0 !important;
+        }
     }
-    .w-sm-o {
-      width: auto !important;
-    }
-    .card {
-      margin: 0 !important;
-    }
-  }
 }
